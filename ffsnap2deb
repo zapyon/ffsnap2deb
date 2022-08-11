@@ -1,0 +1,20 @@
+#!/bin/bash
+
+##  Remove FF snap and install FF from deb again
+
+##  Better than only just removing the snap, according to 
+#   https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
+#   discussion post http://disq.us/p/2oq70ev - "since it removes the 
+#   /usr/bin/firefox cover bash script that tells you to install the
+#   snap firefox package."
+sudo apt -y purge firefox && sudo snap remove firefox
+sudo -y add-apt-repository ppa:mozillateam/ppa
+echo '
+Package: *
+Pin: release o=LP-PPA-mozillateam
+Pin-Priority: 1001
+' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+
+echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+
+sudo apt -y install firefox
