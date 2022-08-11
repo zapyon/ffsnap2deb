@@ -1,0 +1,41 @@
+##  .gitignore for project ffsnap2deb (AN, 2022-08-11)
+
+##  Ignore all kinds of backup files
+.*~
+*~
+**/.*~
+**/*~
+.*.swp
+*.swp
+**/.*.swp
+**/*.swp
+
+##  Archives should be extracted and the files committed
+.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# pdf and epub files should be generated from markdown source when needed
+*.epub
+*.pdf
+
+##  Compiled stuff should usually not be in a git repo
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.pyo
+*.pyc
+
+##  Never ignore this file!
+!.gitignore
+
+
+## That's about it for now.
