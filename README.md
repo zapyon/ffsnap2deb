@@ -8,7 +8,8 @@ This is the result, a small script that does the following:
 1. uninstall the Firefox snap
 2. add the repository for the Firefox debian package for Ubuntu
 3. pin Firefox to the deb version (see apt pinning for details)
-4. install Firefox from the deb.
+4. create configuration to ensure Firefox updates are performed usidn the deb, with automatic updates
+5. install Firefox from the deb.
 
 I have used it on several machines by now, without any problems.
 
