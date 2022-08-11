@@ -11,6 +11,7 @@ This is the result, a small script that does the following:
 4. create configuration to ensure Firefox updates are performed usidn the deb, with automatic updates
 5. install Firefox from the deb.
 
+I found the snippets and info in __How to Install Firefox as a .Deb on Ubuntu 22.04 (Not a Snap)__ by __Joey Sneddon__ (Updated 28 April 2022) — 
 Source: https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04
 
 I have used this script on several machines by now, without any problems.
