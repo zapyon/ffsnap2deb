@@ -1,4 +1,5 @@
-# ffsnap2deb
+# ffsnap2deb — Revert to using the Firefox .deb Package in Ubuntu 22.04+
+## (instead of using that "§$%&/() Snap version)
 
 Starting with it's 22.04 LTS version, Ubuntu dumped the traditional Debian packages for Firefox, replacing it with the home-grown Snap system. Many users do not like that decision. Luckily, there is a PPA available: https://launchpad.net/~mozillateam/+archive/ubuntu/ppa
 
