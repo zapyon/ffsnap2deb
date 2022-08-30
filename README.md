@@ -1,11 +1,13 @@
 # ffsnap2deb — Revert to using the Firefox .deb Package in Ubuntu 22.04+
-## (instead of using that "§$%&/() Snap version)
+## (Instead of Using That !§$%&/()=ß Snap Version)
 
-Starting with it's 22.04 LTS version, Ubuntu dumped the traditional Debian packages for Firefox, replacing it with the home-grown Snap system. Many users do not like that decision. Luckily, there is a PPA available: https://launchpad.net/~mozillateam/+archive/ubuntu/ppa
+Starting with it's 22.04 LTS version, Ubuntu dumped the traditional Debian packages for Firefox, replacing them with a package for the home-grown Snap system. Many users do not like that decision. Luckily, there is a PPA available:
 
-So it is possible to ditch the Firefox Snap, and return to the Debian packages. At least for now.
+  https://launchpad.net/~mozillateam/+archive/ubuntu/ppa
 
-When I decided to make the effort of doing so (right after realizing what Ubuntu had done, during upgrade of an Xubuntu machine to 22.04 LTS) I found a nice description on how to achieve this. But as I knew I would be upgrading a couple more machines soon, and being lazy, I decided to put the sample commands from that description into a script. And lo and behold, it worked like a charm the first time, and has done so ever since.
+__So it is possible to ditch the Firefox Snap, and return to the Debian packages.__ At least for now.
+
+When I decided to make the effort of doing so (right after realizing what Ubuntu had done, during upgrade of an Xubuntu machine to 22.04 LTS) I found a [nice description on how to achieve this](https://www.omgubuntu.co.uk/2022/04/how-to-install-firefox-deb-apt-ubuntu-22-04). But as I knew I would be upgrading a couple more machines soon, and being lazy, I decided to put the sample commands from that description into a script. And lo and behold, it worked like a charm the first time, and has done so ever since.
 
 So may be you can use it, to. Let me know if anything fails or could be improved.
 Of course, no guarantees. YMMV ;-)
