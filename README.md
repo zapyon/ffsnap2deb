@@ -1,24 +1,31 @@
 # ffsnap2deb
-For [X]Ubuntu, replace the Firefox snap installation with the classic Debian package
 
-Annoyingly, Ubuntu decided to use the snap format for several packages and dropped the Debian packages. One affected program is Firefox, my current web browser of choice. As I was annoyed to have to revert from snap to Debian package manually after upgrading the system, I looked for options.
+Starting with it's 22.04 LTS version, Ubuntu dumped the traditional Debian packages for Firefox, replacing it with the home-grown Snap system. Many users do not like that decision. Luckily, there is a PPA available: https://launchpad.net/~mozillateam/+archive/ubuntu/ppa
+
+So it is possible to ditch the Firefox Snap, and return to the Debian packages. At least for now.
+
+When I decided to make the effort of doing so (right after realizing what Ubuntu had done, during upgrade of an Xubuntu machine to 22.04 LTS) I found a nice description on how to achieve this. But as I knew I would be upgrading a couple more machines soon, and being lazy, I decided to put the sample commands from that description into a script. And lo and behold, it worked like a charm the first time, and has done so ever since.
+
+So may be you can use it, to. Let me know if anything fails or could be improved.
+Of course, no guarantees. YMMV ;-)
 
 
 ## What it does
 
-This is the result, a small script that does the following:
+This small script does the following:
 
-1. uninstall the Firefox snap
-2. add the repository for the Firefox debian package for Ubuntu
-3. pin Firefox to the deb version (see apt pinning for details)
-4. create configuration to ensure Firefox updates are performed usidn the deb, with automatic updates
-5. install Firefox from the deb
+1. __uninstall__ the Firefox __Snap__
+2. __add the Mozilla Team's PPA__ (package repository) for the Firefox Debian package for Ubuntu
+3. __pin Firefox__ to the deb version (see apt pinning for details)
+4. __create configuration__ to ensure Firefox __updates use the deb__, not the snap, even with automatic updates
+5. __install Firefox from the deb__
+6. __Enjoy.__
 
-The script requires you have sudo rights and will ask for your credentials accordingly.
+The script __requires__ you have __sudo__ rights and will ask for your credentials accordingly.
 
-I have used this script on several machines by now, and without any problems.
+I have used this script on several machines by now, so far without any problems.
 
-Feel free to use this script, but take heed it is just a quick hack. So, no promises, no guarantees.
+Feel free to use this script, but take heed it is just a quick hack. So, __no promises, no guarantees.__
 
 
 ## Resources
