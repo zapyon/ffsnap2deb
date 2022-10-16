@@ -8,7 +8,7 @@
 #   /usr/bin/firefox cover bash script that tells you to install the
 #   snap firefox package."
 sudo apt -y purge firefox && sudo snap remove firefox
-sudo -y add-apt-repository ppa:mozillateam/ppa
+sudo add-apt-repository -y ppa:mozillateam/ppa
 echo '
 Package: *
 Pin: release o=LP-PPA-mozillateam
